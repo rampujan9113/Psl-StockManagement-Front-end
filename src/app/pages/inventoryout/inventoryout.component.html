@@ -1,0 +1,70 @@
+<!-- <div class="ly shadow p-3 mb-5 bg-white rounded">
+  <div class="card ng-star-inserted"> -->
+    <div class="row ">
+      <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-6">
+                        <h3 class="fs-5 fw-bolder mb-0" style="color: black;">{{name}}</h3>
+                    </div>
+
+                    <div class="col-6 text-end">
+                          <i 
+
+                          routerLink="/inventoryin" 
+                          class="fa fa-arrow-left btw" 
+                          aria-hidden="true">
+
+                        </i>
+
+                        
+                  </div>
+                    
+                </div>
+            </div>
+          <!-- <div class="card-header">
+                <h4 class="card-title">Inventory</h4>
+                <button class="card-title  btn btn-primary">Add inventory</button>
+            </div> -->
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table">
+                <thead class="text-primary ab">
+                  <th >productName</th>
+                  <th >productQty</th>
+                  <th >price</th>
+                  <th >totalPrice</th>
+                  <!-- <th >Product Recived By</th> -->
+                  <th >Action</th>
+                </thead>
+                <tbody class="bb">
+                  <tr *ngFor="let product of products">
+                    <td>{{product.productName}}</td>
+                    <td>{{product.productQty}}</td>
+                    <td>{{product.price}}</td>
+                    <td>{{product.totalPrice}}</td>
+                    <button class="btn btn-danger">
+                      Delete
+                  </button>
+                  </tr>
+
+                    
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+  
+  
